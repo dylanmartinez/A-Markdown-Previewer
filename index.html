@@ -81,6 +81,21 @@
         padding: 20px;
       }
 
+      .footer {
+        /* position: fixed; */
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        padding: 0px;
+      }
+
+      .footer a {
+        padding: 0px;
+        font-size: 16px;
+      }
+
     </style>
 
     <title>A Markdown Previewer</title>
@@ -161,5 +176,7 @@ And here. | Okay. | I think we get it.
           previewElement.innerHTML = marked.parse(defaultText);
         }
       </script>
+
+      <footer class="footer">&copy 2022 <a href="https://martinezdylan.com/" target="_blank">Dylan Martinez</a></footer>
   </body>
 </html>
